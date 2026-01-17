@@ -23,3 +23,9 @@
 *   **Module 5: Frontend & Mobile**
     *   [Android Lifecycle](Android-Development/Basics/ActivityLifecycle.md)
     *   [Design Tokens](Design-System/Guidelines/DesignTokens.md)
+
+*   **Module 6: Projects**
+    *   [All Projects](Projects/README.md)
+    *   [Backend Projects](Projects/Backend-Projects/)
+    *   [Frontend Projects](Projects/Frontend-Projects/)
+    *   [DevOps Projects](Projects/DevOps-Projects/)

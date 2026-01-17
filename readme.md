@@ -53,6 +53,15 @@ javac -d bin Computer-Science/Algorithms/src/main/java/com/google/career/algorit
 java -cp bin com.google.career.algorithms.AlgorithmExamples
 ```
 
+## 🌐 GitHub Pages
+
+This repository includes a **Docsify-powered documentation site** that can be deployed to GitHub Pages.
+
+📖 **[View Setup Instructions](GITHUB_PAGES_SETUP.md)**
+
+Once deployed, your documentation will be available at:
+`https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
+
 ## 🤝 Contributing
 Found a bug? Want to add a new algorithm? Pull requests are welcome!
 
