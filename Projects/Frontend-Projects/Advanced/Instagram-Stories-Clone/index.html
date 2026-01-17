@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Stories Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stories-container" id="stories-container">
+        <div class="story-viewer" id="story-viewer">
+            <div class="story-header">
+                <div class="story-user">
+                    <div class="user-avatar">U</div>
+                    <span class="username">username</span>
+                    <span class="time">2h</span>
+                </div>
+                <button class="close-btn" id="close-btn">×</button>
+            </div>
+            
+            <div class="story-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+            
+            <div class="story-content" id="story-content">
+                <div class="story-item active" data-story="0">
+                    <img src="https://via.placeholder.com/400x700/667eea/ffffff?text=Story+1" alt="Story 1">
+                </div>
+                <div class="story-item" data-story="1">
+                    <img src="https://via.placeholder.com/400x700/764ba2/ffffff?text=Story+2" alt="Story 2">
+                </div>
+                <div class="story-item" data-story="2">
+                    <img src="https://via.placeholder.com/400x700/f093fb/ffffff?text=Story+3" alt="Story 3">
+                </div>
+            </div>
+            
+            <div class="story-nav">
+                <button class="nav-btn prev-btn" id="prev-btn">‹</button>
+                <button class="nav-btn next-btn" id="next-btn">›</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="stories-grid" id="stories-grid">
+        <h1>Instagram Stories</h1>
+        <div class="story-thumbnails">
+            <div class="story-thumbnail" data-story="0">
+                <img src="https://via.placeholder.com/100x100/667eea/ffffff?text=1" alt="Story 1">
+                <div class="story-ring"></div>
+            </div>
+            <div class="story-thumbnail" data-story="1">
+                <img src="https://via.placeholder.com/100x100/764ba2/ffffff?text=2" alt="Story 2">
+                <div class="story-ring"></div>
+            </div>
+            <div class="story-thumbnail" data-story="2">
+                <img src="https://via.placeholder.com/100x100/f093fb/ffffff?text=3" alt="Story 3">
+                <div class="story-ring"></div>
+            </div>
+        </div>
+        <p>Click on any story to view</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

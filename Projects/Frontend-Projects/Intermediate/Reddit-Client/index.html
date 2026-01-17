@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reddit Client</h1>
+        
+        <div class="controls">
+            <input 
+                type="text" 
+                id="subreddit-input" 
+                placeholder="Enter subreddit name (e.g., programming, javascript)"
+                value="programming">
+            <button id="load-btn" class="load-btn">Load Posts</button>
+        </div>
+        
+        <div id="loading" class="loading" hidden>Loading posts...</div>
+        
+        <div id="posts-container" class="posts-container"></div>
+        
+        <div id="error" class="error-message" hidden></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

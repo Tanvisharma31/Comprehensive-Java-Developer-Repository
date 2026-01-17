@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Random Repository Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Random Repository Finder</h1>
+        
+        <div class="search-section">
+            <button id="find-repo-btn" class="find-btn">Find Random Repository</button>
+            <div id="loading" class="loading" hidden>Loading...</div>
+        </div>
+        
+        <div id="repo-card" class="repo-card" hidden>
+            <div class="repo-header">
+                <h2 id="repo-name"></h2>
+                <a id="repo-link" href="#" target="_blank" class="repo-link">View on GitHub →</a>
+            </div>
+            
+            <p id="repo-description" class="repo-description"></p>
+            
+            <div class="repo-stats">
+                <div class="stat">
+                    <span class="stat-icon">⭐</span>
+                    <span id="repo-stars"></span>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">🍴</span>
+                    <span id="repo-forks"></span>
+                </div>
+                <div class="stat">
+                    <span class="stat-icon">👁️</span>
+                    <span id="repo-watchers"></span>
+                </div>
+            </div>
+            
+            <div class="repo-meta">
+                <span id="repo-language" class="language-badge"></span>
+                <span id="repo-updated" class="updated-text"></span>
+            </div>
+        </div>
+        
+        <div id="error" class="error-message" hidden></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

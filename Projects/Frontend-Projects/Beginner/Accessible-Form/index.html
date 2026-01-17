@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Accessible Contact Form</h1>
+        
+        <form id="contact-form" aria-label="Contact form">
+            <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    required 
+                    aria-required="true"
+                    aria-describedby="name-error"
+                    autocomplete="name">
+                <span id="name-error" class="error" role="alert" aria-live="polite"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required 
+                    aria-required="true"
+                    aria-describedby="email-error"
+                    autocomplete="email">
+                <span id="email-error" class="error" role="alert" aria-live="polite"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone"
+                    aria-describedby="phone-hint"
+                    autocomplete="tel">
+                <span id="phone-hint" class="hint">Optional - Format: (555) 123-4567</span>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message <span class="required">*</span></label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    rows="5" 
+                    required 
+                    aria-required="true"
+                    aria-describedby="message-error"></textarea>
+                <span id="message-error" class="error" role="alert" aria-live="polite"></span>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Form</button>
+        </form>
+        
+        <div id="success-message" class="success-message" role="alert" aria-live="polite" hidden></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

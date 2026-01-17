@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.dropdown-wrapper {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-selected {
+    padding: 1rem;
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-color 0.3s;
+}
+
+.dropdown-selected:hover {
+    border-color: #667eea;
+}
+
+.custom-dropdown.active .dropdown-selected {
+    border-color: #667eea;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.arrow {
+    color: #666;
+    transition: transform 0.3s;
+}
+
+.custom-dropdown.active .arrow {
+    transform: rotate(180deg);
+    color: #667eea;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 2px solid #667eea;
+    border-top: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-dropdown.active .dropdown-options {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dropdown-option {
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-option:last-child {
+    border-bottom: none;
+}
+
+.dropdown-option:hover {
+    background: #f5f7fa;
+}
+
+.dropdown-option.selected {
+    background: #667eea;
+    color: white;
+}
+
+.selected-value {
+    padding: 1rem;
+    background: #f5f7fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.selected-value p {
+    color: #666;
+}
+
+#selected-value-display {
+    color: #667eea;
+    font-weight: bold;
+}

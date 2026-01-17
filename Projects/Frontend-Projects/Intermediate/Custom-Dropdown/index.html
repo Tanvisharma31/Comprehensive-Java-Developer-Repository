@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Dropdown</h1>
+        
+        <div class="dropdown-wrapper">
+            <label for="custom-dropdown">Select an option:</label>
+            <div class="custom-dropdown" id="custom-dropdown">
+                <div class="dropdown-selected" id="dropdown-selected">
+                    <span>Choose an option...</span>
+                    <span class="arrow">▼</span>
+                </div>
+                <div class="dropdown-options" id="dropdown-options">
+                    <div class="dropdown-option" data-value="option1">Option 1</div>
+                    <div class="dropdown-option" data-value="option2">Option 2</div>
+                    <div class="dropdown-option" data-value="option3">Option 3</div>
+                    <div class="dropdown-option" data-value="option4">Option 4</div>
+                    <div class="dropdown-option" data-value="option5">Option 5</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="selected-value">
+            <p>Selected: <span id="selected-value-display">None</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

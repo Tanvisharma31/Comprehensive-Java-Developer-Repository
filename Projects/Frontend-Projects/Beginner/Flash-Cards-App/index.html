@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flash Cards</h1>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-value" id="current-card">1</span>
+                <span class="stat-label">of</span>
+                <span class="stat-value" id="total-cards">5</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Score:</span>
+                <span class="stat-value" id="score">0</span>
+            </div>
+        </div>
+        
+        <div class="flashcard" id="flashcard">
+            <div class="card-front">
+                <h2 id="question">Click to start</h2>
+            </div>
+            <div class="card-back" id="card-back">
+                <h2 id="answer"></h2>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="prev-btn" class="btn">Previous</button>
+            <button id="flip-btn" class="btn btn-primary">Flip Card</button>
+            <button id="next-btn" class="btn">Next</button>
+        </div>
+        
+        <div class="progress">
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

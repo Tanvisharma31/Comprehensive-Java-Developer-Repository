@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.datepicker-wrapper {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    color: #555;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.datepicker {
+    position: relative;
+}
+
+.date-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    padding-right: 3rem;
+}
+
+.date-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.calendar-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.2rem;
+}
+
+.selected-date {
+    padding: 1rem;
+    background: #f5f7fa;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.selected-date p {
+    color: #555;
+    font-size: 1rem;
+}
+
+#selected-date-display {
+    color: #667eea;
+    font-weight: bold;
+}
